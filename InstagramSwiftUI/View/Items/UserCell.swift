@@ -18,11 +18,12 @@ struct UserCell: View {
 
             VStack(alignment: .leading) {
                 Text("Batman")
-
+                    .foregroundStyle(.adjustableText)
                 Text("Bruce Wayne")
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(.gray)
             }
             .font(.system(size: 14, weight: .semibold))
+           
 
             Spacer()
         }

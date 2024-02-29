@@ -26,14 +26,14 @@ struct SearchBar: View {
                     .padding(.leading, 8)
                 )
                 .onTapGesture {
-                    withAnimation(.easeInOut(duration: 0.3)) {
+                    withAnimation(.spring) {
                         isEditing = true
                     }
                 }
             
             if isEditing {
                 Button(action: {
-                    withAnimation(.easeInOut(duration: 0.3)) {
+                    withAnimation(.spring) {
                         isEditing = false
                         text = ""
                         UIApplication.shared.endEditing()

@@ -12,7 +12,11 @@ struct UserListView: View {
         ScrollView {
             LazyVStack {
                 ForEach(1 ..< 20) { _ in
-                    UserCell()
+                    NavigationLink(destination: {
+                        ProfileView()
+                    }, label: {
+                        UserCell()
+                    })
                 }
             }
         }
@@ -20,5 +24,7 @@ struct UserListView: View {
 }
 
 #Preview {
-    UserListView()
+    NavigationView {
+        UserListView()
+    }
 }
