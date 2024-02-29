@@ -20,6 +20,9 @@
 		7CDED9612B8DBAF200C6FD12 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDED9602B8DBAF200C6FD12 /* FeedCell.swift */; };
 		7CDED9632B901DCD00C6FD12 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDED9622B901DCD00C6FD12 /* SearchBar.swift */; };
 		7CDED9652B90244C00C6FD12 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDED9642B90244C00C6FD12 /* PostGridView.swift */; };
+		7CDED9672B90358B00C6FD12 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDED9662B90358B00C6FD12 /* UserCell.swift */; };
+		7CDED9692B90359800C6FD12 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDED9682B90359800C6FD12 /* UserListView.swift */; };
+		7CDED96B2B90444400C6FD12 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDED96A2B90444400C6FD12 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		7CDED9602B8DBAF200C6FD12 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		7CDED9622B901DCD00C6FD12 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		7CDED9642B90244C00C6FD12 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
+		7CDED9662B90358B00C6FD12 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		7CDED9682B90359800C6FD12 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		7CDED96A2B90444400C6FD12 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +122,9 @@
 			isa = PBXGroup;
 			children = (
 				7CDED9642B90244C00C6FD12 /* PostGridView.swift */,
+				7CDED9662B90358B00C6FD12 /* UserCell.swift */,
+				7CDED9682B90359800C6FD12 /* UserListView.swift */,
+				7CDED96A2B90444400C6FD12 /* Extensions.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -316,9 +325,12 @@
 				7CDED9542B8D82E900C6FD12 /* MainTabView.swift in Sources */,
 				7CDED95F2B8D83D700C6FD12 /* UploadPostView.swift in Sources */,
 				7CDED95D2B8D83B800C6FD12 /* ProfileView.swift in Sources */,
+				7CDED9672B90358B00C6FD12 /* UserCell.swift in Sources */,
 				7CDED9632B901DCD00C6FD12 /* SearchBar.swift in Sources */,
 				7CDED95A2B8D837600C6FD12 /* NotificationView.swift in Sources */,
 				7CDED9612B8DBAF200C6FD12 /* FeedCell.swift in Sources */,
+				7CDED9692B90359800C6FD12 /* UserListView.swift in Sources */,
+				7CDED96B2B90444400C6FD12 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
