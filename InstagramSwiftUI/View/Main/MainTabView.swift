@@ -39,7 +39,9 @@ struct MainTabView: View {
             .tint(.black)
             .navigationTitle("Home")
             .navigationBarTitleDisplayMode(.inline)
+          
         }
+     
     }
 }
 

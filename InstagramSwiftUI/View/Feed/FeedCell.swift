@@ -23,7 +23,7 @@ struct FeedCell: View {
             .padding([.leading, .bottom], 8)
 
             //: post image
-            Image(.batman)
+            Image(.venuom)
                 .resizable()
                 .scaledToFit()
                 .clipped()
