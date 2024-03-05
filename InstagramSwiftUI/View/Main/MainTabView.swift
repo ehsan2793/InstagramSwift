@@ -36,6 +36,7 @@ struct MainTabView: View {
                         TabLabel(imageName: "person", label: "Profile")
                     }
             }
+
             .tint(.black)
             .navigationTitle("Home")
             .navigationBarTitleDisplayMode(.inline)
@@ -46,9 +47,7 @@ struct MainTabView: View {
                         .frame(width: 100)
                 }
             }
-          
         }
-     
     }
 }
 

@@ -9,9 +9,11 @@ import SwiftUI
 
 struct ProfileView: View {
     var body: some View {
-        ProfileHeaderView()
+        VStack {
+            ProfileHeaderView()
 
-        PostGridView()
+            PostGridView()
+        }
     }
 }
 

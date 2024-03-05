@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ProfileHeaderView: View {
     @State var count = 1
+    @State var follow = false
     var body: some View {
         VStack(alignment: .leading, spacing: 8.0) {
             HStack {
@@ -34,18 +35,9 @@ struct ProfileHeaderView: View {
 
             HStack {
                 Spacer()
-                Button(action: /*@START_MENU_TOKEN@*/ {}/*@END_MENU_TOKEN@*/, label: {
-                    Text("Edit Profile")
-                        .foregroundStyle(.adjustableText)
-                        .font(.system(size: 14, weight: .semibold))
-                        .padding(6)
-                        .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: 320)
 
-                        .overlay {
-                            RoundedRectangle(cornerRadius: 3)
-                                .stroke(.gray, lineWidth: 1)
-                        }
-                })
+                ProfileActionButton(isCurrentUser: false, isFollowed: $follow)
+
                 Spacer()
             }
         }
