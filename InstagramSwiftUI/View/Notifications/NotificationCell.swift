@@ -37,7 +37,7 @@ struct NotificationCell: View {
                         .foregroundStyle(.white)
                         .font(.footnote)
                         .fontWeight(.semibold)
-                        .background(.primary)
+                        .background(.blue)
                         .clipShape(RoundedRectangle(cornerRadius: 25.0))
 
                 })

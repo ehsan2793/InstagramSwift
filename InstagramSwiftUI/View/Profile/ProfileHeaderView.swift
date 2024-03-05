@@ -11,12 +11,12 @@ struct ProfileHeaderView: View {
     @State var count = 1
     @State var follow = false
     var body: some View {
-        VStack(alignment: .leading, spacing: 8.0) {
+        VStack(alignment: .leading, spacing: 5.0) {
             HStack {
                 Image(.venuom)
                     .resizable()
                     .scaledToFill()
-                    .frame(width: 80, height: 80)
+                    .frame(width: 75, height: 75)
                     .clipShape(Circle())
 
                 Spacer()

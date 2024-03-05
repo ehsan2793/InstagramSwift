@@ -37,7 +37,7 @@ struct MainTabView: View {
                     }
             }
 
-            .tint(.black)
+            .tint(.primary)
             .navigationTitle("Home")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
@@ -45,6 +45,7 @@ struct MainTabView: View {
                     Image(.instagramLogoBlack)
                         .resizable()
                         .frame(width: 100)
+                        
                 }
             }
         }
@@ -60,6 +61,7 @@ struct TabLabel: View {
             Image(systemName: imageName)
             Text(label)
         }
+    
     }
 }
 
