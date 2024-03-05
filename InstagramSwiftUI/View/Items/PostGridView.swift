@@ -24,6 +24,8 @@ struct PostGridView: View {
                 }
             }
         }
+        .scrollIndicators(.hidden)
+        .padding(.horizontal, 1)
     }
 }
 
