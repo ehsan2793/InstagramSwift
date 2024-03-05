@@ -42,7 +42,7 @@ struct ProfileHeaderView: View {
             }
         }
         .padding(.horizontal)
-        .padding(.bottom, 4)
+        .padding([.bottom, .top], 4)
     }
 }
 

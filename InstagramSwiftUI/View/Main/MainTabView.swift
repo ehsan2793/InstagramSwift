@@ -45,7 +45,6 @@ struct MainTabView: View {
                     Image(.instagramLogoBlack)
                         .resizable()
                         .frame(width: 100)
-                        
                 }
             }
         }
@@ -61,7 +60,6 @@ struct TabLabel: View {
             Image(systemName: imageName)
             Text(label)
         }
-    
     }
 }
 

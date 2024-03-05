@@ -11,7 +11,7 @@ struct SearchView: View {
     @State var searchText: String = ""
     @State var inSearchMode = false
     var body: some View {
-        NavigationView {
+        ScrollView {
             VStack {
                 SearchBar(text: $searchText, isEditing: $inSearchMode)
 
@@ -25,8 +25,7 @@ struct SearchView: View {
                 Spacer()
             }
         }
-        .navigationBarTitle("", displayMode: .inline)
-        .navigationBarBackButtonHidden(true)
+        .scrollIndicators(.hidden)
     }
 }
 
