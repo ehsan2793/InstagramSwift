@@ -130,7 +130,6 @@
 				7CDED9642B90244C00C6FD12 /* PostGridView.swift */,
 				7CDED9662B90358B00C6FD12 /* UserCell.swift */,
 				7CDED9682B90359800C6FD12 /* UserListView.swift */,
-				7CDED96A2B90444400C6FD12 /* Extensions.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -199,6 +198,7 @@
 		7CDED94B2B8D79EB00C6FD12 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				7CDED96A2B90444400C6FD12 /* Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
