@@ -16,12 +16,8 @@ struct UploadPostView: View {
         VStack {
             if postImage == nil {
                 PhotosPicker(selection: $photoPickerItem, matching: .images) {
-                    Image(.uploader)
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 180, height: 180)
-                        .clipped()
-                        .padding(.top)
+                    plusPhotoButton()
+                        .foregroundStyle(.adjustableText)
                 }
 
             } else {
