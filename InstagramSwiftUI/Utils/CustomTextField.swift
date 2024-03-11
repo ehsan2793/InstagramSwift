@@ -27,6 +27,9 @@ struct CustomTextField: View {
                     .foregroundColor(.white)
 
                 TextField("", text: $text)
+                    .tint(.white)
+                
+                   
             }
         }
         .padding()
@@ -37,5 +40,9 @@ struct CustomTextField: View {
 }
 
 #Preview {
-    CustomTextField(text: .constant(""), placeholder: Text("Email"), imageName: "envelope")
+    ZStack {
+        Color.blue
+        CustomTextField(text: .constant(""), placeholder: Text("Email"), imageName: "envelope")
+    }
+  
 }

@@ -12,10 +12,10 @@ import SwiftUI
 class AuthViewModel: ObservableObject {
     @Published var userSession: User?
 
+    static let shared = AuthViewModel()
+
     init() {
-        print("made it here 1")
         userSession = Auth.auth().currentUser
-        print("made it here 2")
     }
 
     func login() {
@@ -35,7 +35,13 @@ class AuthViewModel: ObservableObject {
     }
 
     func signout() {
-        print("signout")
+        userSession = nil
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+        } catch let signOutError as NSError {
+            print("Error signing out: %@", signOutError)
+        }
     }
 
     func fetchUser() {

@@ -44,7 +44,19 @@ struct MainTabView: View {
                 ToolbarItem(placement: .topBarLeading) {
                     Image(.instagramLogoBlack)
                         .resizable()
+                        .renderingMode(.template)
+                        .foregroundStyle(.adjustableText)
                         .frame(width: 100)
+                }
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button(action: {
+                        AuthViewModel.shared.signout()
+                    }, label: {
+                        Text("Sign Out")
+                            .foregroundStyle(.adjustableText)
+                            .fontWeight(.bold)
+                            .font(.caption)
+                    })
                 }
             }
         }
