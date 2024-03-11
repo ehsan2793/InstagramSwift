@@ -16,6 +16,7 @@ struct RegisterationView: View {
     @State private var fullname = ""
     @State private var password = ""
     @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var viewModel: AuthViewModel
     var body: some View {
         ZStack {
             LinearGradient(gradient: Gradient(colors: [Color.purple, Color.blue]), startPoint: .top, endPoint: .bottom)
@@ -46,8 +47,10 @@ struct RegisterationView: View {
 
                     CustomSecureField(text: $password, placeholder: Text("Password"))
 
-                    Button(action: {}, label: {
-                        Text("Sign In")
+                    Button(action: {
+                        viewModel.register(email: email, password: password)
+                    }, label: {
+                        Text("Sign Up")
                             .foregroundStyle(.white)
                             .font(.headline)
                             .fontWeight(.semibold)
@@ -92,4 +95,5 @@ struct RegisterationView: View {
 
 #Preview {
     RegisterationView()
+        .environmentObject(AuthViewModel())
 }
