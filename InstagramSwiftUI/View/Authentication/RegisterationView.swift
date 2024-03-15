@@ -49,7 +49,7 @@ struct RegisterationView: View {
                     CustomSecureField(text: $password, placeholder: Text("Password"))
 
                     Button(action: {
-                        viewModel.register(email: email, password: password)
+                        viewModel.register(email: email, password: password, image: selectedImage, fullname: fullname, username: username)
                     }, label: {
                         Text("Sign Up")
                             .foregroundStyle(.white)
