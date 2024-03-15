@@ -45,7 +45,7 @@ struct LoginView: View {
                     }
 
                     Button(action: {
-                        viewModel.login()
+                        viewModel.login(email: email, password: password)
                     }, label: {
                         Text("Sign In")
                             .foregroundStyle(.white)
